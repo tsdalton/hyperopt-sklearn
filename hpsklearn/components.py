@@ -712,7 +712,7 @@ def _trees_hp_space(
         min_samples_leaf=None,
         bootstrap=None,
         oob_score=False,
-        n_jobs=1,
+        n_jobs=-1,
         random_state=None,
         verbose=False):
     '''Generate trees ensemble hyperparameters search space
