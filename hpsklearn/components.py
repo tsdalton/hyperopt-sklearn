@@ -713,6 +713,7 @@ def _trees_hp_space(
         bootstrap=None,
         oob_score=False,
         n_jobs=-1,
+        class_weight='balanced',
         random_state=None,
         verbose=False):
     '''Generate trees ensemble hyperparameters search space
@@ -732,6 +733,7 @@ def _trees_hp_space(
                    if bootstrap is None else bootstrap),
         oob_score=oob_score,
         n_jobs=n_jobs,
+        class_weight='balanced',
         random_state=_random_state(name_func('rstate'), random_state),
         verbose=verbose,
     )
